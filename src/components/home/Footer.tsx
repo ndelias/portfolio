@@ -2,15 +2,16 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-100 relative overflow-hidden">
-      {/* Floral illustrations */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute bottom-10 left-10 w-20 h-20 bg-amber-200 rounded-full"></div>
-        <div className="absolute bottom-20 left-32 w-12 h-12 bg-amber-300 rounded-full"></div>
-        <div className="absolute bottom-40 left-20 w-16 h-16 bg-amber-100 rounded-full"></div>
-        <div className="absolute bottom-60 left-40 w-10 h-10 bg-amber-200 rounded-full"></div>
-        <div className="absolute bottom-80 left-10 w-14 h-14 bg-amber-300 rounded-full"></div>
-      </div>
+    <footer className="relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0"
+        style={{
+          backgroundImage: 'url(/images/shared/Footer.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      ></div>
       
       <div className="relative z-10 py-8 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
