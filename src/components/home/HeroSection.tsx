@@ -2,25 +2,33 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-200 to-blue-100">
-      {/* Background Image with Geese */}
+    <section className="relative min-h-screen flex items-start justify-center bg-transparent pt-50">
+      {/* Background Image */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-blue-200 opacity-80"></div>
-        {/* Placeholder for geese image - you can replace with actual image */}
-        <div className="absolute top-20 left-1/4 w-32 h-16 bg-blue-300 rounded-full opacity-60"></div>
-        <div className="absolute top-16 left-1/3 w-24 h-12 bg-blue-300 rounded-full opacity-60"></div>
-        <div className="absolute top-24 left-1/2 w-28 h-14 bg-blue-300 rounded-full opacity-60"></div>
+        <div className="absolute inset-0 bg-blue-200 opacity-100"></div>
+        <img 
+          src="/images/home/IMG_4243 2.jpeg" 
+          alt="Hero background" 
+          className="absolute inset-0 w-full h-full object-cover opacity-60"
+        />
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-4">
-        <h1 className="text-6xl md:text-8xl font-serif text-gray-800 mb-4">
-          Amend Therapy
+      <div className="relative z-10 text-left-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-7xl md:text-7xl font-serif text-black max-w-1.5xl mx-auto mb-6">
+        Feeling Burned Out, Anxious, or Stuck? 
+        Therapy Can Help.
         </h1>
-        <p className="text-xl md:text-2xl text-gray-700 font-light max-w-2xl mx-auto">
-          Therapy for Women Navigating Life's Turning Points
+        <p className="text-xl md:text-2xl text-gray-800 font-light max-w-1.5xl mx-auto mb-8">
+        Start your journey with a therapist who helps you come home to yourself.
         </p>
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+          Schedule Now
+        </button>
       </div>
+      
+      {/* Bottom Shadow */}
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/20 to-transparent"></div>
     </section>
   );
 };

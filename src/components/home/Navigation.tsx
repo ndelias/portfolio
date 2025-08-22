@@ -9,12 +9,11 @@ const Navigation = () => {
           <div className="flex items-center space-x-4">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-300 rounded-full flex items-center justify-center">
-                <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10 2L3 7v11h14V7l-7-5zM10 4.5L15 8v8H5V8l5-3.5z"/>
-                </svg>
-              </div>
-              <span className="text-xl font-serif text-gray-800">Amend Therapy</span>
+              <img 
+                src="/images/home/AMEND LOGO 2.png" 
+                alt="Amend Therapy Logo" 
+                className="h-8 w-auto"
+              />
             </Link>
             
             {/* Navigation Links */}
@@ -32,7 +31,7 @@ const Navigation = () => {
           </div>
           
           {/* Book Appointment Button */}
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200">
+          <button className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200">
             Book Appointment
           </button>
         </div>
