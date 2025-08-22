@@ -32,7 +32,7 @@ const Navigation = () => {
           
           {/* Book Appointment Button */}
           <button className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200">
-            Book Appointment
+            Schedule Appointment
           </button>
         </div>
       </div>

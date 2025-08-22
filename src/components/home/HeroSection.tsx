@@ -20,7 +20,8 @@ const HeroSection = () => {
         Therapy Can Help.
         </h1>
         <p className="text-xl md:text-2xl text-gray-800 font-light max-w-1.5xl mx-auto mb-8">
-        Start your journey with a therapist who helps you come home to yourself.
+        I support people who feel drained, emotionally exhausted, and under constant pressure to stay strong.
+You don’t have to keep carrying it all alone. 
         </p>
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
           Schedule Now

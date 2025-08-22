@@ -32,10 +32,11 @@ const IntroductionSection = () => {
               {/* Circular frame with organic shapes overlay */}
               <div className="absolute inset-0 bg-blue-100 rounded-full"></div>
               <div className="absolute inset-4 bg-white rounded-full overflow-hidden">
-                {/* Placeholder for headshot */}
-                <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500 text-lg">Angela's Photo</span>
-                </div>
+                <img 
+                  src="/images/home/Angela's Photo.jpeg" 
+                  alt="Angela - Amend Therapy" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Organic shapes overlay */}
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-blue-200 rounded-full opacity-60"></div>

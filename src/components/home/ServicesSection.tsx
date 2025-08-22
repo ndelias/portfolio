@@ -5,22 +5,22 @@ const ServicesSection = () => {
     {
       title: "Life Transitions & Identity",
       description: "Navigating major life changes, career shifts, relationship changes, and finding your authentic self.",
-      icon: "🔄"
+      image: "/images/home/rs=w_400,cg_true.webp"
     },
     {
       title: "Depression & Self-Worth",
       description: "Building self-compassion, challenging negative thought patterns, and rediscovering your inner strength.",
-      icon: "💙"
+      image: "/images/home/mental-health-therapy.webp"
     },
     {
       title: "Anxiety, Stress & Burnout",
       description: "Managing overwhelming feelings, developing coping strategies, and creating sustainable self-care practices.",
-      icon: "🧘"
+      image: "/images/home/therapy-therapist-mental-health-featured.jpg.optimal.jpg"
     },
     {
       title: "Cultural & Family Pressures",
       description: "Addressing cultural expectations, family dynamics, and finding balance between tradition and personal needs.",
-      icon: "👨‍👩‍👧‍👦"
+      image: "/images/home/sided-view-young-girl-talking-therapist_23-2150136592.avif"
     }
   ];
 
@@ -34,9 +34,13 @@ const ServicesSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {services.map((service, index) => (
             <div key={index} className="text-center space-y-4">
-              {/* Circular image placeholder */}
-              <div className="w-32 h-32 mx-auto bg-blue-100 rounded-full flex items-center justify-center">
-                <span className="text-4xl">{service.icon}</span>
+              {/* Service image */}
+              <div className="w-32 h-32 mx-auto bg-blue-100 rounded-full overflow-hidden">
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-semibold text-gray-800">
                 {service.title}
