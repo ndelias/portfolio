@@ -14,8 +14,8 @@ const CTASection = () => {
           without judgment. I'm here to walk alongside you on this path of self-discovery and growth.
         </p>
         
-        <button className="px-8 py-3 border-2 border-blue-400 text-blue-600 rounded-full hover:bg-blue-50 transition-colors duration-200">
-          Reach Out
+        <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
+          Book Now
         </button>
       </div>
     </section>

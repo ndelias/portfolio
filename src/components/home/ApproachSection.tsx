@@ -8,24 +8,18 @@ const ApproachSection = () => {
           {/* Left Column - Image */}
           <div className="relative">
             <div className="w-full h-96 bg-gradient-to-br from-amber-200 to-orange-200 rounded-lg overflow-hidden">
-              {/* Placeholder for therapy session image */}
-              <div className="w-full h-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-amber-300 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                  </div>
-                  <span className="text-amber-700 text-lg">Therapy Session</span>
-                </div>
-              </div>
+              <img 
+                src="/images/home/myths-vs-facts-article-1.png" 
+                alt="Therapy Approach" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           
           {/* Right Column - Text */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-serif text-gray-800 leading-tight">
-              My Approach
+              My Therapeutic Approach
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
               Therapy is a conversation—one where there's space for honesty, curiosity, and even moments of calm. 
@@ -57,10 +51,7 @@ const ApproachSection = () => {
               working together to create a personalized path forward.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-3 border-2 border-blue-400 text-blue-600 rounded-full hover:bg-blue-50 transition-colors duration-200">
-                Learn More
-              </button>
+            <div className="flex justify-start">
               <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
                 Book Now
               </button>

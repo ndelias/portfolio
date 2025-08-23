@@ -19,8 +19,8 @@ const ConsultationSection = () => {
         <p className="text-xl text-gray-600 mb-8">
           Let's see if we're a good fit.
         </p>
-        <button className="px-8 py-3 border-2 border-blue-400 text-blue-600 rounded-full hover:bg-blue-50 transition-colors duration-200">
-          Learn More
+        <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
+          Book Free Consultation
         </button>
       </div>
     </section>

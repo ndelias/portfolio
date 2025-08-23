@@ -1,34 +1,38 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0"
-        style={{
-          backgroundImage: 'url(/images/shared/Footer.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      ></div>
-      
-      <div className="relative z-10 py-8 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          {/* Left side - Logo and location */}
-          <div className="flex items-center space-x-4 mb-4 md:mb-0">
-            <div className="w-8 h-8 bg-blue-300 rounded-full flex items-center justify-center">
-              <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 2L3 7v11h14V7l-7-5zM10 4.5L15 8v8H5V8l5-3.5z"/>
-              </svg>
-            </div>
-            <span className="text-gray-700">area, MS</span>
-          </div>
-          
-          {/* Right side - Copyright */}
-          <div className="text-gray-700">
-            All Rights Reserved
-          </div>
+    <footer className="bg-gray-800 text-gray-300 py-12 px-4">
+      <div className="max-w-7xl mx-auto text-center space-y-6">
+        {/* Contact Information */}
+        <div className="text-lg">
+          Marietta, GA | 678.923.6922| angela@amendlpc.com
+        </div>
+        
+        {/* Copyright */}
+        {/* <div className="text-sm">
+          © 2025 by Rosebud Psychotherapy
+        </div> */}
+        
+        {/* Legal Links */}
+        <div className="flex justify-center space-x-6 text-sm">
+          <Link href="/privacy-policy" className="text-gray-300 hover:text-amber-200 transition-colors duration-200 underline">
+            Privacy Policy
+          </Link>
+          <Link href="/no-surprises-act" className="text-gray-300 hover:text-amber-200 transition-colors duration-200 underline">
+            No Surprises Act
+          </Link>
+        </div>
+        
+        {/* In-Person Therapy Locations */}
+        <div className="text-sm">
+          In-Person Therapy: Marietta, GA; Kennesaw, GA; Acworth, GA; Atlanta, GA; Smyrna, GA; Powder Springs, GA; Woodstock, GA
+        </div>
+        
+        {/* Address */}
+        <div className="text-sm">
+          at 840 Kennesaw Ave NW Suite 8, Marietta, GA, 30060
         </div>
       </div>
     </footer>

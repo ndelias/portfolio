@@ -52,10 +52,7 @@ const ServicesSection = () => {
           ))}
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-8 py-3 border-2 border-blue-400 text-blue-600 rounded-full hover:bg-blue-50 transition-colors duration-200">
-            Learn More
-          </button>
+        <div className="flex justify-center">
           <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
             Book Now
           </button>

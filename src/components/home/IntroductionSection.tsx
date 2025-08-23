@@ -8,7 +8,7 @@ const IntroductionSection = () => {
           {/* Left Column - Text */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-serif text-gray-800 leading-tight">
-              You Deserve to Feel Seen—and Supported
+              Meet Angela
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
               Hi, I'm Angela. I understand that life's turning points can leave you feeling overwhelmed, 
@@ -16,10 +16,7 @@ const IntroductionSection = () => {
               dealing with stress and anxiety, or simply feeling disconnected from yourself, I'm here to 
               provide a safe, supportive space where you can explore, heal, and grow.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="px-8 py-3 border-2 border-blue-400 text-blue-600 rounded-full hover:bg-blue-50 transition-colors duration-200">
-                Learn More
-              </button>
+            <div className="flex justify-start">
               <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
                 Book Now
               </button>
