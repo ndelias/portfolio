@@ -1,6 +1,11 @@
+"use client";
+
 import React from 'react';
+import { useTranslation } from '../../contexts/TranslationContext';
 
 const PhilosophySection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="py-20 px-4 bg-blue-100 relative overflow-hidden">
       {/* Floral illustrations */}
@@ -14,7 +19,7 @@ const PhilosophySection = () => {
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <blockquote className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-800 leading-relaxed italic">
-          "This isn't about 'fixing' you—it's about honoring where you are and helping you reconnect with what matters most."
+          "{t('philosophy.quote')}"
         </blockquote>
       </div>
     </section>

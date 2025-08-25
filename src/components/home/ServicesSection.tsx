@@ -1,34 +1,39 @@
+"use client";
+
 import React from 'react';
+import { useTranslation } from '../../contexts/TranslationContext';
 
 const ServicesSection = () => {
+  const { t } = useTranslation();
+  
   const services = [
     {
-      title: "Life Transitions & Identity",
-      description: "Navigating major life changes, career shifts, relationship changes, and finding your authentic self.",
+      title: t('services.lifeTransitions.title'),
+      description: t('services.lifeTransitions.description'),
       image: "/images/home/rs=w_400,cg_true.webp"
     },
     {
-      title: "Depression & Self-Worth",
-      description: "Building self-compassion, challenging negative thought patterns, and rediscovering your inner strength.",
+      title: t('services.depression.title'),
+      description: t('services.depression.description'),
       image: "/images/home/mental-health-therapy.webp"
     },
     {
-      title: "Anxiety, Stress & Burnout",
-      description: "Managing overwhelming feelings, developing coping strategies, and creating sustainable self-care practices.",
+      title: t('services.anxiety.title'),
+      description: t('services.anxiety.description'),
       image: "/images/home/therapy-therapist-mental-health-featured.jpg.optimal.jpg"
     },
     {
-      title: "Cultural & Family Pressures",
-      description: "Addressing cultural expectations, family dynamics, and finding balance between tradition and personal needs.",
+      title: t('services.cultural.title'),
+      description: t('services.cultural.description'),
       image: "/images/home/sided-view-young-girl-talking-therapist_23-2150136592.avif"
     }
   ];
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section id="services" className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-serif text-gray-800 text-center mb-16">
-          What I Can Help With
+          {t('services.title')}
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -45,7 +50,7 @@ const ServicesSection = () => {
               <h3 className="text-xl font-semibold text-gray-800">
                 {service.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-sm font-light px-4">
                 {service.description}
               </p>
             </div>
@@ -54,7 +59,7 @@ const ServicesSection = () => {
         
         <div className="flex justify-center">
           <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
-            Book Now
+            {t('services.cta')}
           </button>
         </div>
       </div>

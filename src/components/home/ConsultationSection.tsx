@@ -1,6 +1,11 @@
+"use client";
+
 import React from 'react';
+import { useTranslation } from '../../contexts/TranslationContext';
 
 const ConsultationSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="py-20 px-4 bg-blue-100 relative overflow-hidden">
       {/* Starburst/splash illustration */}
@@ -14,13 +19,13 @@ const ConsultationSection = () => {
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">
-          Your First Consultation Free
+          {t('consultation.title')}
         </h2>
         <p className="text-xl text-gray-600 mb-8">
-          Let's see if we're a good fit.
+          {t('consultation.subtitle')}
         </p>
         <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
-          Book Free Consultation
+          {t('consultation.cta')}
         </button>
       </div>
     </section>

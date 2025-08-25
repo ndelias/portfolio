@@ -1,15 +1,19 @@
+"use client";
+
 import React from 'react';
+import { useTranslation } from '../../contexts/TranslationContext';
 
 const InsuranceHero = () => {
+  const { t } = useTranslation();
+  
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-blue-50 to-white">
+    <section className="py-20 px-4 bg-blue-100">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-serif text-gray-800 mb-6">
-          Insurance & Payment
+          {t('insuranceHero.title')}
         </h1>
         <p className="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-          I accept most major insurance plans to make therapy accessible and affordable. 
-          I also offer flexible payment options for those without insurance coverage.
+          {t('insuranceHero.description')}
         </p>
       </div>
     </section>

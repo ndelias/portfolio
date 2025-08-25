@@ -1,9 +1,15 @@
+"use client";
+
 import React from 'react';
+import { useTranslation } from '../../contexts/TranslationContext';
+import { translations } from '../../lib/translations';
 
 const ApproachSection = () => {
+  const { t, locale } = useTranslation();
+  
   return (
-    <section className="py-20 px-4 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Image */}
           <div className="relative">
@@ -19,41 +25,28 @@ const ApproachSection = () => {
           {/* Right Column - Text */}
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-serif text-gray-800 leading-tight">
-              My Therapeutic Approach
+              {t('approach.title')}
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Therapy is a conversation—one where there's space for honesty, curiosity, and even moments of calm. 
-              I believe in creating a collaborative environment where you feel heard, understood, and empowered to 
-              make meaningful changes in your life.
+              {t('approach.description')}
             </p>
             
             <ul className="space-y-3">
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">Compassionate & person-centered</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">Mindfulness-informed & trauma-sensitive</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">Culturally aware & spiritually respectful</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                <span className="text-gray-700">Rooted in practical tools that meet you where you are</span>
-              </li>
+              {translations[locale].approach.points.map((point: string, index: number) => (
+                <li key={index} className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                  <span className="text-gray-700">{point}</span>
+                </li>
+              ))}
             </ul>
             
             <p className="text-lg text-gray-600 leading-relaxed">
-              This isn't about applying generic solutions—it's about understanding your unique story and 
-              working together to create a personalized path forward.
+              {t('approach.conclusion')}
             </p>
             
             <div className="flex justify-start">
               <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
-                Book Now
+                {t('approach.cta')}
               </button>
             </div>
           </div>

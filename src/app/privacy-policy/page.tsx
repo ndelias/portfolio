@@ -1,9 +1,12 @@
 import React from 'react';
+import Navigation from '../../components/home/Navigation';
+import Footer from '../../components/home/Footer';
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto py-16 px-4">
+      <Navigation />
+      <div className="max-w-4xl mx-auto py-16 px-4 pt-32">
         <h1 className="text-4xl md:text-5xl font-serif text-gray-800 mb-8">
           Privacy Policy
         </h1>
@@ -93,6 +96,7 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

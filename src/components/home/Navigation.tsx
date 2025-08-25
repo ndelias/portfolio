@@ -1,7 +1,13 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
+import { useTranslation } from '../../contexts/TranslationContext';
+import LanguageSwitcher from '../LanguageSwitcher';
 
 const Navigation = () => {
+  const { t } = useTranslation();
+  
   return (
     <nav className="fixed top-0 left-0 z-50 w-full bg-blue-100 rounded-b-lg shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,22 +24,25 @@ const Navigation = () => {
             
             {/* Navigation Links */}
             <div className="hidden md:flex space-x-8">
-              <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
-                About Me
+              <Link href="/#about" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+                {t('navigation.aboutMe')}
               </Link>
-              <Link href="/services" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
-                Services
+              <Link href="/#services" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
+                {t('navigation.services')}
               </Link>
               <Link href="/insurance" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">
-                Insurance
+                {t('navigation.insurance')}
               </Link>
             </div>
           </div>
           
-          {/* Book Appointment Button */}
-          <button className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200">
-            Schedule Appointment
-          </button>
+          {/* Language Switcher and Book Appointment Button */}
+          <div className="flex items-center space-x-4">
+            <LanguageSwitcher />
+            <button className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200">
+              {t('navigation.scheduleAppointment')}
+            </button>
+          </div>
         </div>
       </div>
     </nav>

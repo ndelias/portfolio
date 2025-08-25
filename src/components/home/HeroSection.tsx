@@ -1,6 +1,11 @@
+"use client";
+
 import React from 'react';
+import { useTranslation } from '../../contexts/TranslationContext';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="relative min-h-screen flex items-start justify-center bg-transparent pt-50">
       {/* Background Image */}
@@ -16,15 +21,13 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-left-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-7xl md:text-7xl font-serif text-black max-w-1.5xl mx-auto mb-6">
-        Feeling Burned Out, Anxious, or Stuck? 
-        Therapy Can Help.
+          {t('hero.title')}
         </h1>
         <p className="text-xl md:text-2xl text-gray-800 font-light max-w-1.5xl mx-auto mb-8">
-        I support people who feel drained, emotionally exhausted, and under constant pressure to stay strong.
-You don’t have to keep carrying it all alone. 
+          {t('hero.subtitle')}
         </p>
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
-          Schedule Now
+          {t('hero.cta')}
         </button>
       </div>
       

@@ -1,21 +1,41 @@
+"use client";
+
 import React from 'react';
+import { useTranslation } from '../../contexts/TranslationContext';
 
 const CTASection = () => {
+  const { t } = useTranslation();
+  
   return (
-    <section className="py-20 px-4 bg-white">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="py-20 px-4 bg-white relative overflow-hidden">
+      {/* Background decoration - Left side */}
+      <div className="absolute left-0 top-0 w-96 h-96 opacity-20">
+        <div className="absolute top-10 left-10 w-20 h-20 bg-blue-200 rounded-full"></div>
+        <div className="absolute top-20 left-32 w-12 h-12 bg-blue-300 rounded-full"></div>
+        <div className="absolute top-40 left-20 w-16 h-16 bg-blue-100 rounded-full"></div>
+        <div className="absolute top-60 left-40 w-10 h-10 bg-blue-200 rounded-full"></div>
+        <div className="absolute top-80 left-10 w-14 h-14 bg-blue-300 rounded-full"></div>
+      </div>
+      
+      {/* Background decoration - Right side */}
+      <div className="absolute right-0 top-0 w-96 h-96 opacity-20">
+        <div className="absolute top-10 right-10 w-20 h-20 bg-blue-200 rounded-full"></div>
+        <div className="absolute top-20 right-32 w-12 h-12 bg-blue-300 rounded-full"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 bg-blue-100 rounded-full"></div>
+        <div className="absolute top-60 right-40 w-10 h-10 bg-blue-200 rounded-full"></div>
+        <div className="absolute top-80 right-10 w-14 h-14 bg-blue-300 rounded-full"></div>
+      </div>
+              <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-8">
-          Let's Start This Journey Together
+          {t('cta.title')}
         </h2>
         
         <p className="text-xl text-gray-600 leading-relaxed mb-12 max-w-3xl mx-auto">
-          Reaching out for therapy is the beginning of something deeply healing. It's a step toward creating 
-          a safe, steady, and focused space where you can explore your thoughts, feelings, and experiences 
-          without judgment. I'm here to walk alongside you on this path of self-discovery and growth.
+          {t('cta.description')}
         </p>
         
         <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
-          Book Now
+          {t('cta.button')}
         </button>
       </div>
     </section>

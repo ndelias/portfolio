@@ -1,18 +1,19 @@
+"use client";
+
 import React from 'react';
+import { useTranslation } from '../../contexts/TranslationContext';
+import { translations } from '../../lib/translations';
 
 const InsuranceSection = () => {
-  const insuranceProviders = [
-    "Blue Cross Blue Shield",
-    "Anthem", 
-    "Aetna",
-    "Cigna"
-  ];
+  const { t, locale } = useTranslation();
+  
+  const insuranceProviders = translations[locale].insurance.providers;
 
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-serif text-gray-800 mb-12">
-          Insurances Covered
+          {t('insurance.title')}
         </h2>
         
         <div className="flex flex-wrap justify-center gap-8 items-center max-w-4xl mx-auto">
