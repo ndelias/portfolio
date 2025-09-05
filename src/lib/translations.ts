@@ -53,11 +53,10 @@ export const translations = {
     },
     office: {
       title: "A Welcoming Space for Healing",
-      description: "My office is designed to be a sanctuary—a place where you can feel safe, comfortable, and free to be yourself. Located in a quiet, professional building, the space is thoughtfully arranged to promote relaxation and reflection.",
+      description: "My office is a place where you can feel safe, comfortable, and free to be yourself. Located in a quiet, office park, the space is thoughtfully arranged to promote relaxation and reflection.",
       features: [
         "Comfortable seating in a private, confidential setting",
         "Easy parking and accessible location",
-        "Peaceful atmosphere with natural light",
         "Conveniently located in the heart of the community"
       ],
       location: {

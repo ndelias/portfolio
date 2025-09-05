@@ -1,10 +1,28 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from '../../contexts/TranslationContext';
 
 const ServicesSection = () => {
   const { t } = useTranslation();
+  const [expandedServices, setExpandedServices] = useState<Set<number>>(new Set());
+  
+  // Helper function to get the first sentence
+  const getFirstSentence = (text: string): string => {
+    const sentences = text.split(/[.!?]+/);
+    return sentences[0]?.trim() + (sentences.length > 1 ? '.' : '');
+  };
+
+  // Helper function to toggle expanded state
+  const toggleExpanded = (index: number) => {
+    const newExpanded = new Set(expandedServices);
+    if (newExpanded.has(index)) {
+      newExpanded.delete(index);
+    } else {
+      newExpanded.add(index);
+    }
+    setExpandedServices(newExpanded);
+  };
   
   const services = [
     {
@@ -37,24 +55,40 @@ const ServicesSection = () => {
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {services.map((service, index) => (
-            <div key={index} className="text-center space-y-4">
-              {/* Service image */}
-              <div className="w-32 h-32 mx-auto bg-blue-100 rounded-full overflow-hidden">
-                <img 
-                  src={service.image} 
-                  alt={service.title}
-                  className="w-full h-full object-cover"
-                />
+          {services.map((service, index) => {
+            const isExpanded = expandedServices.has(index);
+            const displayText = isExpanded ? service.description : getFirstSentence(service.description);
+            const hasMoreText = service.description !== getFirstSentence(service.description);
+            
+            return (
+              <div key={index} className="text-center space-y-4">
+                {/* Service image */}
+                <div className="w-32 h-32 mx-auto bg-blue-100 rounded-full overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {service.title}
+                </h3>
+                <div className="space-y-2">
+                  <p className="text-gray-600 leading-relaxed text-sm font-light px-4">
+                    {displayText}
+                  </p>
+                  {hasMoreText && (
+                    <button
+                      onClick={() => toggleExpanded(index)}
+                      className="text-blue-600 hover:text-blue-800 text-sm font-medium transition-colors duration-200"
+                    >
+                      {isExpanded ? 'View Less' : 'View More'}
+                    </button>
+                  )}
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-800">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm font-light px-4">
-                {service.description}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
         
         <div className="flex justify-center">
