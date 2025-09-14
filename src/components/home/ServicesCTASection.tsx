@@ -52,13 +52,17 @@ const ServicesCTASection = () => {
         </div>
         
         <div className="flex justify-center">
-          <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
+          <a 
+            href="https://calendar.app.google/Bq26sXedqVTPLCkY9" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200 inline-block"
+          >
             {t('servicesCTA.cta')}
-          </button>
+          </a>
         </div>
         
-        <p className="text-gray-600 mt-8">
-          {t('servicesCTA.contact')}
+        <p className="text-gray-600 mt-8" dangerouslySetInnerHTML={{ __html: t('servicesCTA.contact') }}>
         </p>
       </div>
     </section>

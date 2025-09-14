@@ -4,12 +4,13 @@ export const translations = {
       aboutMe: "About Me",
       services: "Services",
       insurance: "Insurance",
-      scheduleAppointment: "Schedule Appointment"
+      scheduleAppointment: "Book Now"
     },
     hero: {
-      title: "Feeling Burned Out, Anxious, or Stuck? Therapy Can Help.",
-      subtitle: "I support people who feel drained, emotionally exhausted, and under constant pressure to stay strong. You don't have to keep carrying it all alone.",
-      cta: "Schedule Now"
+      title: "A Therapy Space for Burnout, Anxiety, and Overwhelm",
+      subtitle: "Calm and grounding therapeutic support for overwhelmed adults who are constantly juggling chronic stress and responsibility. When you rarely have space to breathe, therapy can help you take a step back, reflect, and find steadier ways to move forward.",
+      caption: "Offering in-person therapy in Marietta, GA and teletherapy across Georgia.",
+      cta: "Book Free 15 min Consultation"
     },
     introduction: {
       title: "Meet Angela",
@@ -55,7 +56,7 @@ export const translations = {
       features: [
         "Comfortable seating in a private, confidential setting",
         "Easy parking and accessible location",
-        "Conveniently located in the heart of the community"
+        "Conveniently located near KSU and Wellstar Kennestone Hospital"
       ],
       location: {
         title: "Location",
@@ -95,7 +96,7 @@ export const translations = {
     consultation: {
       title: "Your First Consultation Free",
       subtitle: "Let's see if we're a good fit.",
-      cta: "Book Free Consultation"
+      cta: "Book Free 15 min Consultation"
     },
     booking: {
       title: "Book Your Appointment Now",
@@ -164,7 +165,7 @@ export const translations = {
           description: "Start your first therapy session together"
         }
       ],
-      cta: "Book Free Consultation",
+      cta: "Book Free 15 min Consultation",
       contact: "Questions? Contact me at <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a>"
     },
     footer: {
@@ -213,12 +214,13 @@ export const translations = {
       aboutMe: "Sobre Mí",
       services: "Servicios",
       insurance: "Seguro Médico",
-      scheduleAppointment: "Agendar Cita"
+      scheduleAppointment: "Agendar Ahora"
     },
     hero: {
-      title: "¿Te sientes agotada, ansiosa o estancada? La terapia puede ayudar.",
-      subtitle: "Apoyo a personas que se sienten agotadas, emocionalmente exhaustas y bajo presión constante para mantenerse fuertes. No tienes que seguir cargando todo sola.",
-      cta: "Agendar Ahora"
+      title: "Un Espacio Terapéutico para Agotamiento, Ansiedad y Sobrecarga",
+      subtitle: "Apoyo terapéutico calmante y estabilizador para adultos abrumados que constantemente están equilibrando estrés crónico y responsabilidades. Cuando rara vez tienes espacio para respirar, la terapia puede ayudarte a dar un paso atrás, reflexionar y encontrar formas más estables de avanzar.",
+      caption: "Ofreciendo terapia presencial en Marietta, GA y teleterapia en todo Georgia.",
+      cta: "Agendar Consulta Gratuita de 15 min"
     },
     introduction: {
       title: "Conoce a Angela",
@@ -264,8 +266,7 @@ export const translations = {
       features: [
         "Asientos cómodos en un entorno privado y confidencial",
         "Fácil estacionamiento y ubicación accesible",
-        "Ambiente pacífico con luz natural",
-        "Convenientemente ubicado en el corazón de la comunidad"
+        "Convenientemente ubicado cerca de KSU y el Hospital Wellstar Kennestone"
       ],
       location: {
         title: "Ubicación",
@@ -305,7 +306,7 @@ export const translations = {
     consultation: {
       title: "Tu Primera Consulta Gratuita",
       subtitle: "Veamos si somos una buena combinación.",
-      cta: "Agendar Consulta Gratuita"
+      cta: "Agendar Consulta Gratuita de 15 min"
     },
     booking: {
       title: "Agenda tu Cita Ahora",
@@ -374,7 +375,7 @@ export const translations = {
           description: "Inicia tu primera sesión de terapia juntas"
         }
       ],
-      cta: "Agendar Consulta Gratuita",
+      cta: "Agendar Consulta Gratuita de 15 min",
       contact: "¿Preguntas? Contáctame en <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a>"
     },
     footer: {

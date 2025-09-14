@@ -23,14 +23,17 @@ const HeroSection = () => {
         <h1 className="text-7xl md:text-7xl font-serif text-black max-w-1.5xl mx-auto mb-6">
           {t('hero.title')}
         </h1>
-        <p className="text-xl md:text-2xl text-gray-800 font-light max-w-1.5xl mx-auto mb-8">
+        <p className="text-xl md:text-2xl text-gray-800 font-light max-w-1.5xl mx-auto mb-6">
           {t('hero.subtitle')}
+        </p>
+        <p className="text-sm md:text-base text-gray-600 font-light max-w-1.5xl mx-auto mb-8">
+          {t('hero.caption')}
         </p>
         <a 
           href="https://calendar.app.google/Bq26sXedqVTPLCkY9" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl inline-block"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full text-lg transition-colors duration-200 shadow-lg hover:shadow-xl inline-block"
         >
           {t('hero.cta')}
         </a>
