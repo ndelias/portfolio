@@ -22,7 +22,7 @@ const OfficeSection = () => {
           <div className="relative">
             <div className="w-full h-96 bg-gradient-to-br from-amber-200 to-amber-100 rounded-2xl overflow-hidden">
               <img 
-                src="/images/home/il_fullxfull.5938487374_ciel.avif" 
+                src="/images/home/officespace.png" 
                 alt="Office Space" 
                 className="w-full h-full object-cover"
               />

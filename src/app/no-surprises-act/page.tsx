@@ -1,106 +1,137 @@
+"use client";
+
 import React from 'react';
 import Navigation from '../../components/home/Navigation';
 import Footer from '../../components/home/Footer';
+import { useTranslation } from '../../contexts/TranslationContext';
 
 const NoSurprisesAct = () => {
+  const { t, locale } = useTranslation();
+  
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
       <div className="max-w-4xl mx-auto py-16 px-4 pt-32">
         <h1 className="text-4xl md:text-5xl font-serif text-gray-800 mb-8">
-          No Surprises Act
+          {t('noSurprisesAct.title')}
         </h1>
         
         <div className="bg-white rounded-lg shadow-sm p-8 space-y-6">
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Your Rights and Protections Against Surprise Medical Bills</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              {t('noSurprisesAct.rightsTitle')}
+            </h2>
+            <p className="text-sm text-gray-500 mb-4">
+              {t('noSurprisesAct.ombNumber')}
+            </p>
             <p className="text-gray-600 leading-relaxed">
-              The No Surprises Act protects you from surprise medical bills when you receive emergency care or are treated 
-              by an out-of-network provider at an in-network hospital or ambulatory surgical center.
+              {t('noSurprisesAct.intro')}
             </p>
           </div>
           
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">What This Means for You</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              {t('noSurprisesAct.balanceBillingTitle')}
+            </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              When you receive care from our practice, you are protected from surprise billing for:
+              {t('noSurprisesAct.balanceBillingExplanation')}
             </p>
-            <ul className="list-disc list-inside text-gray-600 space-y-2 ml-4">
-              <li>Emergency services</li>
-              <li>Non-emergency services from out-of-network providers at in-network facilities</li>
-              <li>Air ambulance services from out-of-network providers</li>
-            </ul>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              {t('noSurprisesAct.outOfNetworkExplanation')}
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              {t('noSurprisesAct.surpriseBillingExplanation')}
+            </p>
           </div>
           
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Your Rights</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              {t('noSurprisesAct.protectedFromTitle')}
+            </h2>
+            
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  {t('noSurprisesAct.emergencyServicesTitle')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('noSurprisesAct.emergencyServicesDescription')}
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  {t('noSurprisesAct.certainServicesTitle')}
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  {t('noSurprisesAct.certainServicesDescription')}
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  {t('noSurprisesAct.certainServicesNote')}
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              {t('noSurprisesAct.protectionsTitle')}
+            </h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              {t('noSurprisesAct.protectionsIntro')}
+            </p>
+            
             <div className="space-y-4">
               <div className="p-4 bg-blue-50 rounded-lg">
-                <h3 className="font-semibold text-blue-800 mb-2">You're Only Responsible for Your In-Network Cost-Sharing</h3>
+                <h3 className="font-semibold text-blue-800 mb-2">
+                  {t('noSurprisesAct.responsibleTitle')}
+                </h3>
                 <p className="text-blue-700">
-                  You can't be charged more than your in-network deductible, copayments, and coinsurance for surprise bills.
+                  {t('noSurprisesAct.responsibleDescription')}
                 </p>
               </div>
               
               <div className="p-4 bg-green-50 rounded-lg">
-                <h3 className="font-semibold text-green-800 mb-2">You Don't Need to Give Up Your Protections</h3>
-                <p className="text-green-700">
-                  You don't have to give up your protections from balance billing. You also aren't required to get care 
-                  out-of-network. You can choose a provider or facility in your plan's network.
-                </p>
-              </div>
-              
-              <div className="p-4 bg-amber-50 rounded-lg">
-                <h3 className="font-semibold text-amber-800 mb-2">You Have the Right to Receive a Notice</h3>
-                <p className="text-amber-700">
-                  You have the right to receive a notice explaining the billing protections that apply to you.
-                </p>
+                <h3 className="font-semibold text-green-800 mb-2">
+                  {t('noSurprisesAct.healthPlanTitle')}
+                </h3>
+                <ul className="text-green-700 space-y-2">
+                  <li>• {t('noSurprisesAct.healthPlanPoint1')}</li>
+                  <li>• {t('noSurprisesAct.healthPlanPoint2')}</li>
+                  <li>• {t('noSurprisesAct.healthPlanPoint3')}</li>
+                  <li>• {t('noSurprisesAct.healthPlanPoint4')}</li>
+                </ul>
               </div>
             </div>
           </div>
           
           <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">What to Do If You Receive a Surprise Bill</h2>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              If you receive a surprise medical bill, you have several options:
-            </p>
-            <ul className="list-disc list-inside text-gray-600 space-y-2 ml-4">
-              <li>Contact your health plan to understand your benefits</li>
-              <li>Contact the provider or facility that sent the bill</li>
-              <li>File a complaint with your state's insurance department</li>
-              <li>Contact the federal government at 1-800-985-3059</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Independent Dispute Resolution</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              {t('noSurprisesAct.wronglyBilledTitle')}
+            </h2>
             <p className="text-gray-600 leading-relaxed">
-              If you receive a surprise bill, you may be able to dispute the charges through an independent dispute 
-              resolution process. This process allows an independent third party to review the bill and determine 
-              the appropriate amount to be paid.
-            </p>
-          </div>
-          
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h2>
-            <p className="text-gray-600 leading-relaxed">
-              If you have questions about the No Surprises Act or believe you have received a surprise bill, 
-              please contact us:
+              {t('noSurprisesAct.wronglyBilledDescription')}
             </p>
             <div className="mt-4 p-4 bg-gray-50 rounded-lg">
               <p className="text-gray-700">
-                Email: mmalone@rosebudpsychotherapy.com<br />
-                Phone: 404.919.9723<br />
-                Address: 316 Alexander Street SE. Ste 8, Marietta, GA 30060
+                {t('noSurprisesAct.georgiaContact')}
               </p>
             </div>
           </div>
           
-          <div className="border-t pt-6">
+          <div className="border-t pt-6 space-y-4">
             <p className="text-sm text-gray-500">
-              For more information about the No Surprises Act, visit: 
-              <a href="https://www.cms.gov/nosurprises" className="text-blue-600 hover:text-blue-800 ml-1">
-                www.cms.gov/nosurprises
+              {t('noSurprisesAct.federalInfo')}
+              <a href="https://www.cms.gov/files/document/model-disclosure-notice-patient-protections-against-surprisebilling-providers-facilities-health.pdf" 
+                 className="text-blue-600 hover:text-blue-800 ml-1" target="_blank" rel="noopener noreferrer">
+                {t('noSurprisesAct.federalLink')}
+              </a>
+            </p>
+            <p className="text-sm text-gray-500">
+              {t('noSurprisesAct.georgiaInfo')}
+              <a href="https://gov.georgia.gov/" 
+                 className="text-blue-600 hover:text-blue-800 ml-1" target="_blank" rel="noopener noreferrer">
+                {t('noSurprisesAct.georgiaLink')}
               </a>
             </p>
           </div>
