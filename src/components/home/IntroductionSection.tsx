@@ -23,19 +23,16 @@ const IntroductionSection = () => {
               <p className="text-lg text-gray-600 leading-relaxed">
                 {t('introduction.paragraph2')}
               </p>
-
-              <p className="text-lg text-gray-600 leading-relaxed">
-                {t('introduction.paragraph3')}
-              </p>
-
-              <p className="text-lg text-gray-600 leading-relaxed">
-                {t('introduction.paragraph4')}
-              </p>
             </div>
             <div className="flex justify-start">
-              <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
+              <a 
+                href="https://calendar.app.google/Bq26sXedqVTPLCkY9" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200 inline-block"
+              >
                 {t('introduction.cta')}
-              </button>
+              </a>
             </div>
           </div>
           

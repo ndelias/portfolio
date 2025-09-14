@@ -20,8 +20,7 @@ const Footer = () => {
       ></div>
       <div className="relative z-10 max-w-7xl mx-auto text-center space-y-6">
         {/* Contact Information */}
-        <div className="text-lg">
-          {t('footer.contact')}
+        <div className="text-lg" dangerouslySetInnerHTML={{ __html: t('footer.contact') }}>
         </div>
         
         {/* Copyright */}

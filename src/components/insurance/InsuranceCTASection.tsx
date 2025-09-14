@@ -25,16 +25,23 @@ const InsuranceCTASection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
+          <a 
+            href="https://calendar.app.google/Bq26sXedqVTPLCkY9" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200 inline-block"
+          >
             {t('insuranceCTA.scheduleButton')}
-          </button>
-          <button className="px-8 py-3 border-2 border-blue-400 text-blue-600 rounded-full hover:bg-blue-50 transition-colors duration-200">
+          </a>
+          <a 
+            href="mailto:angela@amendlpc.com"
+            className="px-8 py-3 border-2 border-blue-400 text-blue-600 rounded-full hover:bg-blue-50 transition-colors duration-200 inline-block"
+          >
             {t('insuranceCTA.contactButton')}
-          </button>
+          </a>
         </div>
         
-        <p className="text-gray-600 mt-8">
-          {t('insuranceCTA.contact')}
+        <p className="text-gray-600 mt-8" dangerouslySetInnerHTML={{ __html: t('insuranceCTA.contact') }}>
         </p>
       </div>
     </section>

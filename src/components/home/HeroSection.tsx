@@ -26,9 +26,14 @@ const HeroSection = () => {
         <p className="text-xl md:text-2xl text-gray-800 font-light max-w-1.5xl mx-auto mb-8">
           {t('hero.subtitle')}
         </p>
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+        <a 
+          href="https://calendar.app.google/Bq26sXedqVTPLCkY9" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl inline-block"
+        >
           {t('hero.cta')}
-        </button>
+        </a>
       </div>
       
       {/* Bottom Shadow */}

@@ -29,9 +29,14 @@ const BookingSection = () => {
           </div>
         </div>
         
-        <button className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
+        <a 
+          href="https://calendar.app.google/Bq26sXedqVTPLCkY9" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200 inline-block"
+        >
           {t('booking.cta')}
-        </button>
+        </a>
       </div>
     </section>
   );

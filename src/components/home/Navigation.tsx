@@ -39,9 +39,14 @@ const Navigation = () => {
           {/* Language Switcher and Book Appointment Button */}
           <div className="flex items-center space-x-4">
             <LanguageSwitcher />
-            <button className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200">
+            <a 
+              href="https://calendar.app.google/Bq26sXedqVTPLCkY9" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-200 inline-block"
+            >
               {t('navigation.scheduleAppointment')}
-            </button>
+            </a>
           </div>
         </div>
       </div>

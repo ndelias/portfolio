@@ -13,10 +13,8 @@ export const translations = {
     },
     introduction: {
       title: "Meet Angela",
-      paragraph1: "Hi, I'm Angela. I'm a bilingual Latina therapist in Marietta, GA. I specialize in working with adults who have always been the dependable ones — the firstborns, the helpers, the fixers, the strong friends. You've done what's expected, held it all together, and carried a lot. But now, you're exhausted and ready for something different.",
-      paragraph2: "I know how hard it can be to ask for help when you're used to handling everything on your own. Therapy with me is a space where you don't have to hold it all together. We slow things down. We name what's been heavy. And we start making room for a life that feels more sustainable, connected, and yours.",
-      paragraph3: "I bring warmth, humor, and honesty into the therapy room. My work is grounded in culturally responsive care, nervous system awareness, and deep respect for your lived experience especially if you've felt invisible, overextended, or like there was never time or space to fall apart.",
-      paragraph4: "Whether you're dealing with burnout, anxiety, sadness, or a major life change we'll work together to help you feel more grounded and like yourself again.",
+      paragraph1: "Hi, I'm Angela, a bilingual Latina therapist in Marietta, GA. I specialize in supporting adults who've always been the dependable ones—the firstborns, helpers, fixers, the strong friends. You've done what's expected, held it all together, and carried so much. Now you're exhausted and ready for something different. In therapy with me, you don't have to hold it all together. We slow things down, name what's been heavy, and start making room for a life that feels more sustainable, connected, and yours.",
+      paragraph2: "I bring warmth, humor, and honesty into the therapy room. My work is grounded in culturally responsive care, nervous system awareness, and deep respect for your lived experience—especially if you've felt invisible, overextended, or like there was never time or space to fall apart. Whether you're navigating burnout, anxiety, sadness, or a major life change, we'll work together to help you feel more grounded and like yourself again.",
       cta: "Book Now"
     },
     services: {
@@ -142,7 +140,7 @@ export const translations = {
       description: "I'm here to help you understand your coverage and find the best payment option for your situation. Let's discuss your insurance benefits and make sure therapy is accessible for you.",
       scheduleButton: "Schedule Consultation",
       contactButton: "Contact Me",
-      contact: "Email: angela@amendlpc.com | Phone: (678) 923-6922"
+      contact: "Email: <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a> | Phone: (678) 923-6922"
     },
     cta: {
       title: "Ready to Start Your Journey?",
@@ -167,10 +165,10 @@ export const translations = {
         }
       ],
       cta: "Book Free Consultation",
-      contact: "Questions? Contact me at angela@amendlpc.com"
+      contact: "Questions? Contact me at <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a>"
     },
     footer: {
-      contact: "Marietta, GA | 678.923.6922| angela@amendlpc.com",
+      contact: "Marietta, GA | 678.923.6922| <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a>",
       copyright: "© 2025 by Rosebud Psychotherapy",
       privacyPolicy: "Privacy Policy",
       noSurprisesAct: "No Surprises Act",
@@ -224,10 +222,8 @@ export const translations = {
     },
     introduction: {
       title: "Conoce a Angela",
-      paragraph1: "Hola, soy Angela. Soy una terapeuta latina bilingüe en Marietta, GA. Me especializo en trabajar con adultos que siempre han sido los confiables — los primogénitos, los ayudantes, los que arreglan todo, los amigos fuertes. Has hecho lo que se esperaba, has mantenido todo junto y has cargado mucho. Pero ahora, estás exhausta y lista para algo diferente.",
-      paragraph2: "Sé lo difícil que puede ser pedir ayuda cuando estás acostumbrada a manejar todo por tu cuenta. La terapia conmigo es un espacio donde no tienes que mantener todo junto. Desaceleramos las cosas. Nombramos lo que ha sido pesado. Y comenzamos a hacer espacio para una vida que se sienta más sostenible, conectada y tuya.",
-      paragraph3: "Traigo calidez, humor y honestidad al consultorio. Mi trabajo se basa en atención culturalmente sensible, conciencia del sistema nervioso y profundo respeto por tu experiencia vivida, especialmente si te has sentido invisible, sobrecargada o como si nunca hubiera tiempo o espacio para desmoronarte.",
-      paragraph4: "Ya sea que estés lidiando con agotamiento, ansiedad, tristeza o un cambio importante en la vida, trabajaremos juntas para ayudarte a sentirte más arraigada y como tú misma nuevamente.",
+      paragraph1: "Hola, soy Angela, una terapeuta latina bilingüe en Marietta, GA. Me especializo en apoyar a adultos que siempre han sido los confiables—los primogénitos, ayudantes, arregladores, los amigos fuertes. Has hecho lo que se esperaba, has mantenido todo junto y has cargado tanto. Ahora estás exhausta y lista para algo diferente. En terapia conmigo, no tienes que mantener todo junto. Desaceleramos las cosas, nombramos lo que ha sido pesado, y comenzamos a hacer espacio para una vida que se sienta más sostenible, conectada y tuya.",
+      paragraph2: "Traigo calidez, humor y honestidad al consultorio. Mi trabajo se basa en atención culturalmente sensible, conciencia del sistema nervioso y profundo respeto por tu experiencia vivida—especialmente si te has sentido invisible, sobrecargada o como si nunca hubiera tiempo o espacio para desmoronarte. Ya sea que estés navegando agotamiento, ansiedad, tristeza o un cambio importante en la vida, trabajaremos juntas para ayudarte a sentirte más arraigada y como tú misma nuevamente.",
       cta: "Agendar Ahora"
     },
     services: {
@@ -354,7 +350,7 @@ export const translations = {
       description: "Estoy aquí para ayudarte a entender tu cobertura y encontrar la mejor opción de pago para tu situación. Discutamos tus beneficios de seguro y asegurémonos de que la terapia sea accesible para ti.",
       scheduleButton: "Agendar Consulta",
       contactButton: "Contáctame",
-      contact: "Email: angela@amendlpc.com | Teléfono: (678) 923-6922"
+      contact: "Email: <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a> | Teléfono: (678) 923-6922"
     },
     cta: {
       title: "¿Lista para Comenzar tu Viaje?",
@@ -379,10 +375,10 @@ export const translations = {
         }
       ],
       cta: "Agendar Consulta Gratuita",
-      contact: "¿Preguntas? Contáctame en angela@amendlpc.com"
+      contact: "¿Preguntas? Contáctame en <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a>"
     },
     footer: {
-      contact: "Marietta, GA | 678.923.6922| angela@amendlpc.com",
+      contact: "Marietta, GA | 678.923.6922| <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a>",
       copyright: "© 2025 por Rosebud Psychotherapy",
       privacyPolicy: "Política de Privacidad",
       noSurprisesAct: "Ley de Sin Sorpresas",
