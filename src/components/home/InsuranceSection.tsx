@@ -51,9 +51,15 @@ const InsuranceSection = () => {
           <p className="text-gray-600 mb-4">
             {t('insurancePlans.notListed')}
           </p>
-          <p className="text-gray-600">
+          <p className="text-gray-600 mb-8">
             {t('insurancePlans.verifyBenefits')}
           </p>
+          <a 
+            href="/insurance"
+            className="px-8 py-3 bg-gray-700 text-white rounded-full hover:bg-gray-800 transition-colors duration-200 inline-block"
+          >
+            Learn More
+          </a>
         </div>
       </div>
     </section>

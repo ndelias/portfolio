@@ -139,7 +139,7 @@ export const translations = {
     insuranceCTA: {
       title: "Questions About Insurance or Payment?",
       description: "I'm here to help you understand your coverage and find the best payment option for your situation. Let's discuss your insurance benefits and make sure therapy is accessible for you.",
-      scheduleButton: "Schedule Consultation",
+      scheduleButton: "Book Free 15 min Consultation",
       contactButton: "Contact Me",
       contact: "Email: <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a> | Phone: (678) 923-6922"
     },
@@ -349,7 +349,7 @@ export const translations = {
     insuranceCTA: {
       title: "¿Preguntas Sobre Seguro Médico o Pago?",
       description: "Estoy aquí para ayudarte a entender tu cobertura y encontrar la mejor opción de pago para tu situación. Discutamos tus beneficios de seguro y asegurémonos de que la terapia sea accesible para ti.",
-      scheduleButton: "Agendar Consulta",
+      scheduleButton: "Agendar Consulta Gratuita de 15 min",
       contactButton: "Contáctame",
       contact: "Email: <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a> | Teléfono: (678) 923-6922"
     },
