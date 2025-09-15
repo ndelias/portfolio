@@ -6,29 +6,17 @@ import { useTranslation } from '../contexts/TranslationContext';
 const LanguageSwitcher = () => {
   const { locale, changeLanguage } = useTranslation();
 
+  const toggleLanguage = () => {
+    changeLanguage(locale === 'en' ? 'es' : 'en');
+  };
+
   return (
-    <div className="flex items-center space-x-2">
-      <button
-        onClick={() => changeLanguage('en')}
-        className={`px-2 py-1 text-sm rounded ${
-          locale === 'en'
-            ? 'bg-blue-600 text-white'
-            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-        } transition-colors duration-200`}
-      >
-        EN
-      </button>
-      <button
-        onClick={() => changeLanguage('es')}
-        className={`px-2 py-1 text-sm rounded ${
-          locale === 'es'
-            ? 'bg-blue-600 text-white'
-            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-        } transition-colors duration-200`}
-      >
-        ES
-      </button>
-    </div>
+    <button
+      onClick={toggleLanguage}
+      className="px-4 py-2 text-sm border-2 border-blue-500 bg-blue-100 text-blue-700 rounded-full hover:bg-blue-200 transition-colors duration-200"
+    >
+      {locale === 'en' ? 'En Español' : 'In English'}
+    </button>
   );
 };
 
