@@ -40,14 +40,14 @@ export const translations = {
     },
     approach: {
       title: "My Therapeutic Approach",
-      description: "Therapy is a conversation—one where there's space for honesty, curiosity, and even moments of calm. I believe in creating a collaborative environment where you feel heard, understood, and empowered to make meaningful changes in your life.",
+      description: "Therapy is a conversation where we make space for honesty, curiosity, and challenging what is keeping us stuck. I create a collaborative environment where you feel heard, understood, and empowered to make meaningful changes in your life.",
       points: [
         "Compassionate & person-centered",
-        "Mindfulness-informed & trauma-sensitive",
+        "Mindfulness-based & trauma-informed",
         "Culturally aware & spiritually respectful",
         "Rooted in practical tools that meet you where you are"
       ],
-      conclusion: "This isn't about applying generic solutions—it's about understanding your unique story and working together to create a personalized path forward.",
+      conclusion: "I'll never apply generic solutions. I will always work hard to understand your unique story and partner with you to create a personalized path forward.",
       cta: "Book Now"
     },
     office: {
@@ -250,14 +250,14 @@ export const translations = {
     },
     approach: {
       title: "Mi Enfoque Terapéutico",
-      description: "La terapia es una conversación—una donde hay espacio para la honestidad, la curiosidad e incluso momentos de calma. Creo en crear un ambiente colaborativo donde te sientas escuchada, comprendida y empoderada para hacer cambios significativos en tu vida.",
+      description: "La terapia es una conversación donde hacemos espacio para la honestidad, la curiosidad y desafiar lo que nos mantiene estancadas. Creo un ambiente colaborativo donde te sientes escuchada, comprendida y empoderada para hacer cambios significativos en tu vida.",
       points: [
         "Compasivo y centrado en la persona",
-        "Informado por mindfulness y sensible al trauma",
+        "Basado en conciencia plena y informado por trauma",
         "Culturalmente consciente y espiritualmente respetuoso",
         "Enraizado en herramientas prácticas que te encuentran donde estás"
       ],
-      conclusion: "Esto no se trata de aplicar soluciones genéricas—se trata de entender tu historia única y trabajar juntas para crear un camino personalizado hacia adelante.",
+      conclusion: "Nunca aplicaré soluciones genéricas. Siempre trabajaré duro para entender tu historia única y asociarme contigo para crear un camino personalizado hacia adelante.",
       cta: "Agendar Ahora"
     },
     office: {
