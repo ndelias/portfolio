@@ -240,7 +240,7 @@ export const translations = {
       },
       anxiety: {
         title: "Ansiedad, Estrés y Agotamiento",
-        description: "Cuando tu mente nunca se apaga y tu cuerpo siempre está tenso. Si te sientes abrumada, exhausta o constantemente \"activa\", la terapia puede ayudarte a regular tu sistema nervioso, calmar el ruido y crear espacio para respirar. Trabajaremos en desenredar la urgencia, el funcionamiento excesivo y los patrones de supervivencia."
+        description: "Cuando tu mente nunca se apaga y tu cuerpo siempre está tenso. Si te sientes abrumada, exhausta o constantemente &quot;activa&quot;, la terapia puede ayudarte a regular tu sistema nervioso, calmar el ruido y crear espacio para respirar. Trabajaremos en desenredar la urgencia, el funcionamiento excesivo y los patrones de supervivencia."
       },
       cultural: {
         title: "Presiones Culturales y Familiares",
@@ -301,7 +301,7 @@ export const translations = {
       ]
     },
     philosophy: {
-      quote: "Esto no se trata de 'arreglarte'—se trata de honrar dónde estás y ayudarte a reconectarte con lo que más importa."
+      quote: "Esto no se trata de &apos;arreglarte&apos;—se trata de honrar dónde estás y ayudarte a reconectarte con lo que más importa."
     },
     consultation: {
       title: "Tu Primera Consulta Gratuita",
@@ -351,7 +351,7 @@ export const translations = {
       description: "Estoy aquí para ayudarte a entender tu cobertura y encontrar la mejor opción de pago para tu situación. Discutamos tus beneficios de seguro y asegurémonos de que la terapia sea accesible para ti.",
       scheduleButton: "Agendar Consulta Gratuita de 15 min",
       contactButton: "Contáctame",
-      contact: "Email: <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a> | Teléfono: (678) 923-6922"
+      contact: "Email: <a href=&quot;mailto:angela@amendlpc.com&quot; class=&quot;text-blue-600 hover:text-blue-800&quot;>angela@amendlpc.com</a> | Teléfono: (678) 923-6922"
     },
     cta: {
       title: "¿Lista para Comenzar tu Viaje?",
@@ -376,10 +376,10 @@ export const translations = {
         }
       ],
       cta: "Agendar Consulta Gratuita de 15 min",
-      contact: "¿Preguntas? Contáctame en <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a>"
+      contact: "¿Preguntas? Contáctame en <a href=&quot;mailto:angela@amendlpc.com&quot; class=&quot;text-blue-600 hover:text-blue-800&quot;>angela@amendlpc.com</a>"
     },
     footer: {
-      contact: "Marietta, GA | 678.923.6922| <a href=\"mailto:angela@amendlpc.com\" class=\"text-blue-600 hover:text-blue-800\">angela@amendlpc.com</a>",
+      contact: "Marietta, GA | 678.923.6922| <a href=&quot;mailto:angela@amendlpc.com&quot; class=&quot;text-blue-600 hover:text-blue-800&quot;>angela@amendlpc.com</a>",
       copyright: "© 2025 por Rosebud Psychotherapy",
       privacyPolicy: "Política de Privacidad",
       noSurprisesAct: "Ley de Sin Sorpresas",
