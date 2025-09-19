@@ -24,18 +24,18 @@ export const TranslationProvider = ({ children }: { children: ReactNode }) => {
 
   const t = (key: string) => {
     const keys = key.split('.');
-    let value: any = translations[locale];
+    let value: unknown = translations[locale];
     
     for (const k of keys) {
       if (value && typeof value === 'object' && k in value) {
-        value = value[k];
+        value = (value as Record<string, unknown>)[k];
       } else {
         console.warn(`Translation key not found: ${key}`);
         return key;
       }
     }
     
-    return value || key;
+    return typeof value === 'string' ? value : key;
   };
 
   const changeLanguage = (newLocale: Locale) => {

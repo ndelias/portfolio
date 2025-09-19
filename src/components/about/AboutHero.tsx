@@ -11,13 +11,13 @@ const AboutHero = () => {
               Meet Angela
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              I'm a licensed therapist who believes that every woman deserves to feel seen, heard, and supported 
-              during life's most challenging moments. My journey to becoming a therapist began with my own 
+              I&apos;m a licensed therapist who believes that every woman deserves to feel seen, heard, and supported 
+              during life&apos;s most challenging moments. My journey to becoming a therapist began with my own 
               experiences of navigating difficult transitions and searching for authentic connection.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              After working with hundreds of women facing similar challenges, I've learned that healing isn't 
-              about "fixing" what's broken—it's about honoring your story, reconnecting with your inner wisdom, 
+              After working with hundreds of women facing similar challenges, I&apos;ve learned that healing isn&apos;t 
+              about &quot;fixing&quot; what&apos;s broken—it&apos;s about honoring your story, reconnecting with your inner wisdom, 
               and creating a life that truly reflects who you are.
             </p>
           </div>
@@ -35,7 +35,7 @@ const AboutHero = () => {
                         <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    <span className="text-blue-700 text-lg font-medium">Angela's Photo</span>
+                    <span className="text-blue-700 text-lg font-medium">Angela&apos;s Photo</span>
                   </div>
                 </div>
               </div>

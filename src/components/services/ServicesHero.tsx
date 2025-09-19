@@ -11,13 +11,13 @@ const ServicesHero = () => {
               Therapeutic Services
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              I offer personalized therapy services designed to support women through life's most challenging 
+              I offer personalized therapy services designed to support women through life&apos;s most challenging 
               moments. Each session is tailored to your unique needs and goals, creating a collaborative 
               space for healing and growth.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
               My approach combines evidence-based therapeutic techniques with a warm, compassionate 
-              understanding of the unique challenges women face in today's world.
+              understanding of the unique challenges women face in today&apos;s world.
             </p>
           </div>
           

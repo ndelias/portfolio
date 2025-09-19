@@ -17,7 +17,7 @@ const AboutCTASection = () => {
         
         <p className="text-xl text-gray-600 leading-relaxed mb-12 max-w-3xl mx-auto">
           I hope this gives you a sense of who I am and how I work. If you feel like we might be a good fit, 
-          I'd love to hear from you. The first step is often the hardest, but it's also the most important.
+          I&apos;d love to hear from you. The first step is often the hardest, but it&apos;s also the most important.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

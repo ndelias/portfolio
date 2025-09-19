@@ -6,7 +6,7 @@ import Footer from '../../components/home/Footer';
 import { useTranslation } from '../../contexts/TranslationContext';
 
 const NoSurprisesAct = () => {
-  const { t, locale } = useTranslation();
+  const { t } = useTranslation();
   
   return (
     <div className="min-h-screen bg-gray-50">

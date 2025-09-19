@@ -19,7 +19,7 @@ const PhilosophySection = () => {
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <blockquote className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-800 leading-relaxed italic">
-          "{t('philosophy.quote')}"
+          &quot;{t('philosophy.quote')}&quot;
         </blockquote>
       </div>
     </section>

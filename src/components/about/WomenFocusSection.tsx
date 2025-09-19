@@ -28,8 +28,8 @@ const WomenFocusSection = () => {
             Why I Work with Women
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            I've dedicated my practice to supporting women because I understand the unique challenges and 
-            pressures we face in today's world. Women often carry the weight of multiple roles and 
+            I&apos;ve dedicated my practice to supporting women because I understand the unique challenges and 
+            pressures we face in today&apos;s world. Women often carry the weight of multiple roles and 
             expectations, and I believe you deserve a space where you can be fully seen and supported.
           </p>
         </div>
@@ -54,9 +54,9 @@ const WomenFocusSection = () => {
         
         <div className="mt-16 text-center">
           <p className="text-lg text-gray-600 leading-relaxed max-w-4xl mx-auto">
-            In our sessions, you'll find a space where your experiences are validated, your voice is heard, 
-            and your growth is celebrated. I'm committed to creating an environment where you can explore 
-            your authentic self without fear of judgment or pressure to conform to others' expectations.
+            In our sessions, you&apos;ll find a space where your experiences are validated, your voice is heard, 
+            and your growth is celebrated. I&apos;m committed to creating an environment where you can explore 
+            your authentic self without fear of judgment or pressure to conform to others&apos; expectations.
           </p>
         </div>
       </div>

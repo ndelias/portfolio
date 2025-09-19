@@ -41,13 +41,13 @@ const PhilosophySection = () => {
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
               I integrate evidence-based practices with a holistic understanding of the whole person—mind, body, 
-              and spirit. This means we'll work together to understand not just your thoughts and feelings, 
+              and spirit. This means we&apos;ll work together to understand not just your thoughts and feelings, 
               but also how your physical health, relationships, cultural background, and spiritual beliefs 
               all influence your well-being.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
               My goal is to help you develop practical tools and insights that you can use long after our 
-              sessions end, empowering you to navigate life's challenges with greater confidence and resilience.
+              sessions end, empowering you to navigate life&apos;s challenges with greater confidence and resilience.
             </p>
           </div>
         </div>

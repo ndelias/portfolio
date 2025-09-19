@@ -68,14 +68,14 @@ const SessionInfoSection = () => {
             <div>
               <h4 className="text-lg font-semibold text-gray-800 mb-3">Before Your Session</h4>
               <p className="text-gray-600 leading-relaxed">
-                You'll receive intake forms to complete before your first session. This helps me understand 
+                You&apos;ll receive intake forms to complete before your first session. This helps me understand 
                 your background and current concerns, so we can make the most of our time together.
               </p>
             </div>
             <div>
               <h4 className="text-lg font-semibold text-gray-800 mb-3">During Your Session</h4>
               <p className="text-gray-600 leading-relaxed">
-                Sessions are conversational and collaborative. We'll discuss your concerns, work on specific 
+                Sessions are conversational and collaborative. We&apos;ll discuss your concerns, work on specific 
                 goals, and develop practical strategies you can use in your daily life.
               </p>
             </div>

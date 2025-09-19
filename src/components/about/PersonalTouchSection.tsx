@@ -16,7 +16,7 @@ const PersonalTouchSection = () => {
               care they deserve.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              When you work with me, you're not just another appointment on a schedule—you're a unique 
+              When you work with me, you&apos;re not just another appointment on a schedule—you&apos;re a unique 
               individual with your own story, challenges, and goals. I take the time to truly understand 
               your situation and tailor our work together to meet your specific needs.
             </p>

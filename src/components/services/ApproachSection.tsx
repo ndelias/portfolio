@@ -23,7 +23,7 @@ const ApproachSection = () => {
             <div className="bg-white p-6 rounded-2xl shadow-sm">
               <h4 className="text-lg font-semibold text-gray-800 mb-2">Collaborative Partnership</h4>
               <p className="text-gray-600 leading-relaxed">
-                Therapy is a collaborative process. You're the expert on your own experience, and I'm here 
+                Therapy is a collaborative process. You&apos;re the expert on your own experience, and I&apos;m here 
                 to provide guidance, support, and evidence-based tools to help you achieve your goals.
               </p>
             </div>
@@ -39,7 +39,7 @@ const ApproachSection = () => {
             <div className="bg-white p-6 rounded-2xl shadow-sm">
               <h4 className="text-lg font-semibold text-gray-800 mb-2">Practical Tools</h4>
               <p className="text-gray-600 leading-relaxed">
-                You'll learn practical skills and strategies that you can use in your daily life. These 
+                You&apos;ll learn practical skills and strategies that you can use in your daily life. These 
                 tools will help you manage challenges and create lasting positive changes.
               </p>
             </div>

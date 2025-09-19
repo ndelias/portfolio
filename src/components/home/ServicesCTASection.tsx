@@ -39,7 +39,7 @@ const ServicesCTASection = () => {
         <div className="bg-white p-8 rounded-2xl shadow-sm mb-8">
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">Next Steps</h3>
           <div className="grid md:grid-cols-3 gap-6 text-left">
-            {translations[locale].servicesCTA.steps.map((step: any, index: number) => (
+            {translations[locale].servicesCTA.steps.map((step: { title: string; description: string }, index: number) => (
               <div key={index} className="text-center">
                 <div className="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center mx-auto mb-3">
                   <span className="text-blue-600 font-semibold">{index + 1}</span>

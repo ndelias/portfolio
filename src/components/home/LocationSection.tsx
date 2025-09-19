@@ -20,7 +20,7 @@ const LocationSection = () => {
               {t('location.subtitle')}
             </p>
             <div className="space-y-4">
-              {translations[locale].location.features.map((feature: any, index: number) => (
+              {translations[locale].location.features.map((feature: { title: string; description: string }, index: number) => (
                 <div key={index} className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
                   <div>

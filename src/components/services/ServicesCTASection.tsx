@@ -16,8 +16,8 @@ const ServicesCTASection = () => {
         </h2>
         
         <p className="text-xl text-gray-600 leading-relaxed mb-12 max-w-3xl mx-auto">
-          The first step is often the hardest, but it's also the most important. I offer a free 15-minute 
-          consultation call so we can discuss your needs and see if we're a good fit to work together.
+          The first step is often the hardest, but it&apos;s also the most important. I offer a free 15-minute 
+          consultation call so we can discuss your needs and see if we&apos;re a good fit to work together.
         </p>
         
         <div className="bg-white p-8 rounded-2xl shadow-sm mb-8">
