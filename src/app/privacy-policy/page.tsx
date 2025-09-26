@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import React from 'react';
 import Navigation from '../../components/home/Navigation';
 import Footer from '../../components/home/Footer';
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - Amend Therapy",
+  description: "Privacy policy for Amend Therapy and Angela Mendez, LPC. Learn how we protect your personal information and data.",
+};
 
 const PrivacyPolicy = () => {
   return (

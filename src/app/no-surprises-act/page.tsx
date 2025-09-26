@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import type { Metadata } from "next";
 import Navigation from '../../components/home/Navigation';
 import Footer from '../../components/home/Footer';
 import { useTranslation } from '../../contexts/TranslationContext';
