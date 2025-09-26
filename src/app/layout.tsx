@@ -36,8 +36,51 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Amend Therapy",
+    "description": "Bilingual therapist specializing in calm and grounding therapeutic support for overwhelmed adults managing chronic stress and responsibility.",
+    "url": "https://www.amendlpctherapy.com",
+    "telephone": "+1-XXX-XXX-XXXX",
+    "email": "angela@amendlpc.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "840 Kennesaw Ave NW Ste 8",
+      "addressLocality": "Marietta",
+      "addressRegion": "GA",
+      "postalCode": "30060",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "33.9526",
+      "longitude": "-84.5499"
+    },
+    "openingHours": "Mo-Fr 09:00-17:00",
+    "priceRange": "$$",
+    "medicalSpecialty": "Mental Health",
+    "founder": {
+      "@type": "Person",
+      "name": "Angela Mendez",
+      "jobTitle": "Licensed Professional Counselor",
+      "description": "Bilingual therapist specializing in women's mental health and stress management"
+    },
+    "sameAs": [
+      "https://www.amendlpctherapy.com"
+    ]
+  };
+
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
