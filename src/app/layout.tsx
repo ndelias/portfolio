@@ -18,10 +18,15 @@ export const metadata: Metadata = {
   description: "Angela Mendez is a bilingual therapist specializing in calm and grounding therapeutic support for overwhelmed adults who are constantly juggling chronic stress and responsibility.",
   keywords: "therapy, therapist, mental health, bilingual therapy, stress management, anxiety, depression, counseling, Marietta GA, Georgia",
   authors: [{ name: "Angela Mendez, LPC" }],
+  manifest: "/site.webmanifest",
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", type: "image/png" }
+    ],
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Amend Therapy - Angela Mendez, LPC",
